@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to WhatsApp...</title>
+  <script>
+    window.onload = function() {
+      const messages = [
+        "nak tanya promosi",
+        "macam mana mula?",
+        "boleh share cara main tak?",
+        "tips game ada ke?",
+        "saya baru nak cuba, boleh guide?"
+      ];
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      const phone = "601117565323";
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(randomMessage)}`;
+      window.location.href = url;
+    };
+  </script>
+</head>
+<body>
+  <p>Sedang redirect ke WhatsApp...</p>
+</body>
+</html>
